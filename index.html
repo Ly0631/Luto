@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lutô Iloilo – The Iloilo City Cookbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mobile-bar noprint">
+  <button class="btn alt sm" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰ Menu</button>
+  <a class="logo" href="#home">🍲 Lutô Iloilo</a>
+</div>
+<div class="backdrop" id="backdrop" hidden></div>
+
+<div class="shell">
+  <aside class="sidebar noprint" id="sidebar" aria-label="Sidebar navigation and options">
+    <div class="side-head">
+      <a class="logo" href="#home">🍲 Lutô Iloilo</a>
+      <button class="btn alt sm close-side" id="closeMenuBtn" aria-label="Close menu">✕</button>
+    </div>
+
+    <nav aria-label="Main">
+      <a href="#home" data-r="home">🏠 Home</a>
+      <a href="#recipes" data-r="recipes">📖 Recipes</a>
+      <a href="#favorites" data-r="favorites">❤️ Saved</a>
+      <a href="#admin" data-r="admin" id="adminLink" hidden>⚙️ Admin</a>
+    </nav>
+
+    <div class="side-bottom">
+      <div class="authbox" id="auth"></div>
+      <button class="btn alt sm theme-toggle" id="themeBtn" aria-label="Toggle dark mode">🌓 Toggle Theme</button>
+    </div>
+  </aside>
+
+  <div class="content-wrap">
+    <main id="app"></main>
+    <footer>Lutô Iloilo – a static cookbook of Iloilo City’s best-loved dishes. Maayo nga pagkaon!</footer>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
